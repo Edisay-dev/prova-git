@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: white;
+    color: darkred;
+}
+
+header{
+    background-color: darkred;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: darkred;
+    color: white;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0px 2px 6px black; 
+    width: 30%;
+    text-align: center;
+    margin: 18px;
+}
+
+footer{
+    background-color: darkred;
+    color: white;
+    text-align: center;    
+    padding: 10px;
+}
+
+/* Tela Media (tablets) */
+@media (max-width:1024px) {
+    .card{
+        width: 45%;
+    }
+}
+/* Tela Pequena (celulares) */
+@media (max-width:600px) {
+    .main{
+        flex-direction: column;
+    }
+    .card{
+        width: 90%;
+    }
+    header, footer {
+        text-align: center;
+    }
+}
