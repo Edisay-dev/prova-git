@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing:0.1vh;
+    font-weight: lighter;
+
+}
+
+body{
+    background-color: #e2d9ae;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+}
+
+/* Cabeçalho */
+
+.header{
+    background-color: #f7efca;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu ul{
+    justify-content: center;
+    list-style: none;
+    display:flex;
+    gap: 20px;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-weight: lighter;
+    transition: color 0.3s;
+    
+}
+
+.menu a:hover{
+    color: purple;
+}
+
+.main-container{
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.content {
+    flex: 3;
+    background-color: #f7efca;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    flex: 1 1 30%;
+    background-color: #e2d9ae;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 6px black;
+    transition: transform 0.2s;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transform: translate(10px);
+}
+
+.sidebar{
+    text-align: center;
+    flex:1 ;
+    background-color: #f7efca;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 250px;
+    height: fit-content;
+}
+
+.sidebar ul {
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.sidebar li {
+   list-style: none;
+    margin-bottom: 10px;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar a:hover{
+    text-decoration: underline;
+    color: purple;
+}
+
+.footer{
+    text-align: center;
+    display: flex;
+}
+
+@media (max-width: 780px) {
+
+    .main-container{
+        flex-direction: column;
+    }
+     .cards{
+        flex-direction: column;
+     }
+}
